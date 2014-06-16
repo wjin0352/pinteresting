@@ -27,9 +27,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 
-gem 'bootstrap-sass', '~> 3.1.1.1'
-#
+gem 'bootstrap-sass', '~> 3.1.1'
+
 #group :doc do
-	#bundle exec rake doc:rails generates the API under doc/api
-#	gem 'sdoc', require: false
+#	#bundle exec rake doc:rails generates the API under doc/api
+#gem 'sdoc', require: false
 #end

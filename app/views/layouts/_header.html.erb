@@ -1,25 +1,25 @@
 <!--partials, all this code was an eye sore in the other file
 so we saved as _header.html.erb and put that here! created this new file in layouts, its a partial file not to be accessed on its own(marked by underscore before name_), 
 we can 'render' aka put the contents here it in the application.html.erb-->
-<nav class="navbar navbar-inverse navbar-default" role="navigation">
-  <div class="container-fluid">
+<nav class="navbar navbar-static-top navbar-default" role="navigation">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Pinteresting</a>
+      <% link_to "Pinteresting", root_path, class: "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "home", root_path %></li>
         <li><%= link_to "about", about_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div><!-- /.container -->
 </nav>
